@@ -258,16 +258,6 @@ function fetch_news_data($data) {
 
   return $response;
 }
-function enqueue_theme_scripts() {
-  wp_enqueue_script(
-    'theme-tabs',
-    get_template_directory_uri() . '/js/tabs.js',
-    array(),
-    null,
-    true
-  );
-}
-add_action('wp_enqueue_scripts', 'enqueue_theme_scripts');
 
 
 //**********//
